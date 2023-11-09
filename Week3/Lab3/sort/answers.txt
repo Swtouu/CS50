@@ -1,0 +1,50 @@
+sort1 uses: Bubble sort
+
+How do you know?: It's seem to slightly optimized.
+
+sort2 uses: Merge sort
+
+How do you know?: It's efficient sort complexity of O(n log n) faster than bubble and selection.
+
+sort3 uses: Selection sort
+
+How do you know?: It's slowest compare with the rest.
+
+// sort1
+real    0m0.051s
+user    0m0.023s
+sys     0m0.027s
+
+real    0m0.135s
+user    0m0.072s
+sys     0m0.057s
+
+real    0m2.311s
+user    0m1.877s
+sys     0m0.285s
+
+// sort3
+real    0m0.067s
+user    0m0.035s
+sys     0m0.027s
+
+real    0m0.207s
+user    0m0.145s
+sys     0m0.056s
+
+real    0m5.635s
+user    0m5.227s
+sys     0m0.279s
+
+// sort2
+real    0m0.038s
+user    0m0.004s
+sys     0m0.026s
+
+real    0m0.066s
+user    0m0.012s
+sys     0m0.047s
+
+real    0m0.466s
+user    0m0.041s
+sys     0m0.264s
