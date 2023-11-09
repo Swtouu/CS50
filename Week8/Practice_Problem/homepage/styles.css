@@ -1,0 +1,33 @@
+.intro-country {
+    border: 2px solid powderblue;
+    margin: 10px 200px;
+    background-color: #FFF6F6;
+    color: #AEDEFC;
+    font-family: "Garamond", Times, serif;
+}
+
+.form-outer {
+    padding: 10px 20px;
+    background-color: #FFF6F6;
+}
+
+.header-detail {
+    color: #AEDEFC;
+    font-weight: bold;
+}
+
+.intro {
+    font-family: "Garamond", Times, serif;
+}
+
+.visa {
+    font-family: "Garamond", Times, serif;
+}
+
+.weather {
+    font-family: "Garamond", Times, serif;
+}
+
+.tourist {
+    font-family: "Garamond", Times, serif;
+}

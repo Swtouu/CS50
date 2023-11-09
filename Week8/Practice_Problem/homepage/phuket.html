@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+                crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+            <link href="styles.css" rel="stylesheet">
+            <title>Krabi</title>
+        </head>
+    </head>
+
+    <body>
+        <div id="navbar-placeholder"></div>
+        <script>
+            // Load the navigation bar from navbar.html
+            const navbarPlaceholder = document.getElementById('navbar-placeholder');
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'navbar.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    navbarPlaceholder.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        </script>
+        <h1 style="text-align:center;">Phuket</h1>
+        <div class="intro-phuket">
+            <h3>About Phuket</h3>
+            <p>Phuket refers to both the province and the island in southern Thailand. It’s the country’s second
+                smallest province but it’s biggest island, home to beautiful white sand beaches along its southern and
+                western coast and a spattering of smaller islands just off the mainland.</p>
+        </div>
+
+        <div class="todo-phuket">
+            <h3>What to do in Phuket</h3>
+            <ol>
+                <li>
+                    Chill on the beach
+                </li>
+                <li>
+                    Visit the temples
+                </li>
+                <li>
+                    Cruise Phang Nga Bay
+                </li>
+                <li>
+                    Visit the gibbons
+                </li>
+                <li>
+                    Tour the Similan Islands
+                </li>
+            </ol>
+        </div>
+    </body>
+
+</html>

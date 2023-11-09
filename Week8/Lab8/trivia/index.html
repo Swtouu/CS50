@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // part1
+            function answer(selectedAnswer) {
+                let result = document.querySelector('#answer1');
+                if (selectedAnswer === 'C') {
+                    result.innerHTML = selectedAnswer + ' is correct.';
+                    result.style.color = 'green';
+                } else {
+                    result.innerHTML = selectedAnswer + ' is incorrect.';
+                    result.style.color = 'red';
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function () {
+                    answer('C');
+                });
+
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function () {
+                        answer(incorrects[i].textContent);
+                    });
+                }
+            });
+
+
+            // part2
+            function checkAnswer2(inputAns) {
+                let result = document.querySelector('#answer2');
+                if (inputAns === 'Malan') {
+                    result.innerHTML = inputAns + ' is correct.';
+                    result.style.color = 'green';
+                } else {
+                    result.innerHTML = inputAns + ' is incorrect.';
+                    result.style.color = 'red';
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('#submit').addEventListener('click', function () {
+                    let input = document.querySelector('input');
+                    if (input.value === 'Malan') {
+                        checkAnswer2(input.value);
+                    } else {
+                        checkAnswer2(input.value);
+                    }
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+                <h3>Q1. Which language is the first language in CS50?</h3>
+                <p id="answer1"></p>
+                <button class="incorrect">Java</button>
+                <button class="correct">C</button>
+                <button class="incorrect">HTML</button>
+                <button class="incorrect">CSS</button>
+                <button class="incorrect">JavaScript</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Q2. Input the last name of Prof. David</h3>
+                <p id="answer2"></p>
+                <input type="text">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>

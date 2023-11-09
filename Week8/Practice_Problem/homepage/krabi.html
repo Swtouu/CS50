@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+                crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+            <link href="styles.css" rel="stylesheet">
+            <title>Krabi</title>
+        </head>
+    </head>
+
+    <body>
+        <div id="navbar-placeholder"></div>
+        <script>
+            // Load the navigation bar from navbar.html
+            const navbarPlaceholder = document.getElementById('navbar-placeholder');
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'navbar.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    navbarPlaceholder.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        </script>
+
+        <h1 style="text-align:center;">Krabi</h1>
+        <div class="intro-krabi">
+            <h3>About Krabi</h3>
+            <p>The province of Krabi — with its craggy limestone cliffs and tiny isles scattered on the turquoise ocean
+                — is a famous tourist destination in southern Thailand. Idyllic white beaches and towering rock
+                formations make it one of the most beautiful places in the country. At the same time, Krabi is a vibrant
+                cultural hub, with stunning temples and delectable cuisine. If you ever get a chance, it’s definitely
+                worth a visit. Keep reading for KKday’s at-a-glance guide on when to visit, where to stay, and things to
+                do in Krabi.</p>
+        </div>
+
+        <div class="detail-krabi">
+            <h3>Top 5 Reasons to Visit Krabi</h3>
+            <ol>
+                <li>
+                    The Stunning Karst Limestone Island Scenery
+                </li>
+                <li>
+                    Fabulous Pure White Beaches
+                </li>
+                <li>
+                    Plenty of Nightlife and Wonderful Restaurants
+                </li>
+                <li>
+                    A Huge Array of Buddhist Temples and Shrines to Visit
+                </li>
+                <li>
+                    Endless Vacation Activities, from Elephant Rides to Water Skiing
+                </li>
+            </ol>
+        </div>
+
+        <div class="todo-krabi">
+            <h3>What to do in Krabi</h3>
+            <ol>
+                <li>
+                    Ao Nang: Hit the Beach
+                    <p>Tourists love the south of Thailand for the incomparable beach towns found along the perfect
+                        coastline of the Andaman Sea. This corner of Krabi perfectly illustrates why, with relaxing
+                        resorts, gear rental galore, and the opportunity to snorkel and dive your heart out. From both
+                        Ao Nang and Nopparat Thara Beach, boats are available to bear visitors across the water, whether
+                        to explore other parts of the coastline or to make a landing on one of the scenic islands that
+                        float on the horizon.</p>
+                </li>
+                <li>
+                    West Railay Beach: The Real Deal
+                    <p>Only accessible by boat, this exclusive stretch of sand is one of the most beautiful and iconic
+                        beaches in the world. The dramatic outcrops of rock that shoot skyward from the ocean are the
+                        postcard image of southern Thailand, and seeing this view for yourself is an unforgettable
+                        experience. For a challenge, while you're there, go exploring the Diamond Cave. Mind-blowing
+                        geologic formations await inside for a thrilling contrast to the bright blue waters and sunny
+                        beach on the other side.</p>
+                </li>
+                <li>
+                    Ko Phi Phi: Escape to the Sea
+                    <p>Thailand's Phi Phi Islands are the ultimate destination for vacationers to Thailand, and there is
+                        nothing quite like taking a speedboat from Krabi Town out to these tiny plots of perfection.
+                        Craggy cliffs covered in lush jungle rise mystically from the horizon. The two largest islands
+                        boast world-class beaches, and Koh Phi Phi Leh, the smaller of the two, offers even more
+                        secluded exploration. Maya Bay is particularly impressive, surrounded by limestone cliffs and
+                        inaccessible from the sea.</p>
+                </li>
+                <li>
+                    Wat Tham Suea: What a View!
+                    <p>This highlight of Krabi Town is a stunning example of local devotion. Atop a hill surrounded by
+                        sweeping landscapes, an enormous golden Buddha keeps an eye on the region from an elevation of
+                        nearly 1000 feet. The shrine is awe-inspiring, and from the shimmering peak, you can see the
+                        whole town of Krabi down below, along with a whole series of other temples beckoning to be
+                        explored; most notably the Wat Kaew Korawaram.</p>
+                </li>
+                <li>
+                    Mu Ko Lanta National Park: From Land to Sea
+                    <p>Krabi Province is a natural paradise, both on land and at sea, and down the coastline, a series
+                        of large islands split off from the mainland - host to Mu Ko Lanta National Park. Mountainous
+                        terrain full of lush vegetation takes over the land, towering over the occasional mellow beach
+                        peeking out from the coastline down below. Varied and surprising at every turn, these parklands
+                        are just begging to be explored. Diving is also popular, and you'd be hard-pressed to find a
+                        better place for it.</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+
+</html>

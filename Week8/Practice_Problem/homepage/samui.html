@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+                crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script>
+            <link href="styles.css" rel="stylesheet">
+            <title>Krabi</title>
+        </head>
+    </head>
+
+    <body>
+        <div id="navbar-placeholder"></div>
+        <script>
+            // Load the navigation bar from navbar.html
+            const navbarPlaceholder = document.getElementById('navbar-placeholder');
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'navbar.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    navbarPlaceholder.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        </script>
+        <h1 style="text-align:center;">Samui</h1>
+        <div class="intro-phuket">
+            <h3>About Samui</h3>
+            <p>Samui has three seasons; "cool", "hot", and "monsoon", but the seasons are not as distinct as in many
+                western countries, in fact sometimes it can be hard to tell the difference. The best time to visit is
+                between November and April when you will find that the conditions are optimal for enjoying the beaches
+                and engaging in water-sports or boating activities, with a good amount of sun and minimal rain.</p>
+        </div>
+
+        <div class="todo-Samui">
+            <h3>What to do in Samui</h3>
+            <ol>
+                <li>
+                    Visit Koh Samui’s Amazing Temples
+                </li>
+                <li>
+                    Explore Koh Samui's Beaches & Watersports
+                </li>
+                <li>
+                    Go Diving and Explore the Underwater World
+                </li>
+                <li>
+                    Experience the Buzzing Nightlife in Koh Samui
+                </li>
+                <li>
+                    Indulge in the Amazing Cuisine of Koh Samui & Learn to Cook Thai Food
+                </li>
+            </ol>
+        </div>
+
+    </body>
+
+</html>
